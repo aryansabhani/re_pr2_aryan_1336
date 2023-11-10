@@ -15,7 +15,7 @@
 <img src="https://github.com/aryansabhani/re_pr2_aryan_1336/assets/112259316/eccddb8f-b611-44a8-b80b-95b84bcbcf1d"  width="200" >
 <img src="https://github.com/aryansabhani/re_pr2_aryan_1336/assets/112259316/caadb967-961c-4f1e-b7ff-23c7922a6c01"  width="200" >
 
-<img src="https://github.com/aryansabhani/re_pr2_aryan_1336/assets/112259316/826cc8ef-79dc-47e2-8476-b1c6a948e698" width="400" >
+<img src="https://github.com/aryansabhani/re_pr2_aryan_1336/assets/112259316/826cc8ef-79dc-47e2-8476-b1c6a948e698" width="200" >
 
 
 
