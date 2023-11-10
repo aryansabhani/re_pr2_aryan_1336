@@ -21,8 +21,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget build(BuildContext context) {
-    // GoogleSignInAccount user =
-    //     ModalRoute.of(context)!.settings.arguments as GoogleSignInAccount;
+    GoogleSignInAccount user =
+        ModalRoute.of(context)!.settings.arguments as GoogleSignInAccount;
 
     return Scaffold(
       appBar: AppBar(
@@ -50,31 +50,31 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
-      // drawer: Drawer(
-      //   // backgroundColor
-      //   child: Column(
-      //     mainAxisAlignment: MainAxisAlignment.start,
-      //     crossAxisAlignment: CrossAxisAlignment.start,
-      //     mainAxisSize: MainAxisSize.min,
-      //     children: [
-      //       Container(
-      //         padding: EdgeInsets.all(30),
-      //         color: Color.fromRGBO(149, 171, 71, 1),
-      //         child: ListTile(
-      //           title: Text(user?.displayName ?? "user",
-      //               style: TextStyle(fontSize: 14)),
-      //           subtitle: Text(user?.email ?? "xyz@gmail.com",
-      //               style: TextStyle(fontSize: 12)),
-      //           leading: CircleAvatar(
-      //             radius: 30,
-      //             backgroundImage: NetworkImage(user?.photoUrl ??
-      //                 "https://img.freepik.com/premium-vector/account-icon-user-icon-vector-graphics_292645-552.jpg"),
-      //           ),
-      //         ),
-      //       ),
-      //     ],
-      //   ),
-      // ),
+      drawer: Drawer(
+        // backgroundColor
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              padding: EdgeInsets.all(30),
+              color: Color.fromRGBO(149, 171, 71, 1),
+              child: ListTile(
+                title: Text(user?.displayName ?? "user",
+                    style: TextStyle(fontSize: 14)),
+                subtitle: Text(user?.email ?? "xyz@gmail.com",
+                    style: TextStyle(fontSize: 12)),
+                leading: CircleAvatar(
+                  radius: 30,
+                  backgroundImage: NetworkImage(user?.photoUrl ??
+                      "https://img.freepik.com/premium-vector/account-icon-user-icon-vector-graphics_292645-552.jpg"),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
       body: Consumer<ApiProvider>(builder: (context, pro, _) {
         // return ListView(
         //   children: List.generate(pro.alldata.length, (index) {
